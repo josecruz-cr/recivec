@@ -65,16 +65,26 @@
     opacity: 1;
   }
   
-  /* Links del menú */
+  /* Menu container */
   .nav-links {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
     gap: 28px;
-    list-style: none;
+    list-style: none !important;
     margin: 0;
     padding: 0;
   }
   
+  /* Menu items */
+  .nav-links li {
+    list-style: none !important;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Menu links */
   .nav-links a {
     color: var(--azul-profundo);
     text-decoration: none;
@@ -89,7 +99,7 @@
     color: var(--azul-medio);
   }
   
-  /* Botón CTA */
+  /* CTA */
   .nav-cta {
     background: var(--azul-profundo);
     color: white;
