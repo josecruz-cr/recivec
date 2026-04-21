@@ -37,7 +37,7 @@
   }
 
   /* ── NAV ─────────────────────────────── */
-    nav {
+  nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -48,8 +48,11 @@
     justify-content: space-between;
     padding: 12px 40px;
     background-color: #FDFBFA;
+    border-bottom: 1px solid rgba(20, 80, 160, 0.15);
   }
-    .nav-logos {
+  
+  /* Logos */
+  .nav-logos {
     display: flex;
     align-items: center;
     gap: 26px;
@@ -60,6 +63,16 @@
     object-fit: contain;
     filter: none;
     opacity: 1;
+  }
+  
+  /* Links del menú */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   .nav-links a {
@@ -76,22 +89,23 @@
     color: var(--azul-medio);
   }
   
+  /* Botón CTA */
   .nav-cta {
-    background: var(--azul-medio);
+    background: var(--azul-profundo);
     color: white;
     padding: 9px 22px;
-    border-radius: 4px;
+    border-radius: 999px;
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    transition: background 0.2s, transform 0.15s;
     border: none;
     cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
   }
   
   .nav-cta:hover {
-    background: var(--azul-profundo);
+    background: var(--azul-medio);
     transform: translateY(-1px);
   }
 
